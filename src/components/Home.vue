@@ -12,21 +12,22 @@
       <el-container>
         <!-- 侧边栏 -->   
          <!--  -->
-        <el-aside :width='iscollapse?"64px":"200px"'>
-          <div class="zhedie" @click="changeic">菜单缩放|||</div>
+        <el-aside width='60px'>
+          
           <!-- menu属性请到element官网查看 -->
           <!-- 一级菜单index用于区分 二级菜单index用于跳转 menu中router属性开启路由
           collapse是否折叠 collapse-transition折叠动画 -->
-          <el-menu :default-active="this.$route.fullPath"  router  background-color="#333744" text-color="#fff" active-text-color="#409EFF" :unique-opened='true' :collapse=iscollapse :collapse-transition="false">
+          <el-menu :default-active="this.$route.fullPath"  router  background-color="#333744" text-color="#fff" active-text-color="#409EFF" :unique-opened='true' >
             <!-- 一级菜单 -->
-      
-              <el-menu-item index="/user" >
-                <!-- 二级菜单模板区 -->        
-                  <!-- 图标 -->
-                  <i class="el-icon-user"></i>
-                  <!-- 文本 -->
-                  <span>录入用户</span>
-                  
+              <div class="menudiv"><span>功能列表</span></div>
+              <el-menu-item style="padding:0px" index="/user" >
+                  <span>录入用户</span>                
+              </el-menu-item>
+              <el-menu-item style="padding:0px;color:pink" index="/use" >
+                  <span>功能2</span>                
+              </el-menu-item>
+              <el-menu-item style="padding:0px;color:pink" index="/use" >
+                  <span>功能...</span>                
               </el-menu-item>
           </el-menu>
         </el-aside>
@@ -95,6 +96,19 @@ export default {
 }
 .el-menu{
   border: 0px;
+  
+}
+.el-menu-item{
+  font-size: 20px;
+  text-align: center;
+}
+.menudiv{
+  text-align: center;
+  color: grey;
+  font-size: 30px;
+  margin-top: 5px;
+   margin-bottom: 5px;
+   
   
 }
 </style>

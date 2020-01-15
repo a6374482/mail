@@ -104,8 +104,8 @@ export default {
   height: 100%;
 }
 .login_box {
-  width: 450px;
-  height: 300px;
+  width: 650px;
+  height: 500px;
   background-color: #fff;
   border-radius: 3px;
   // 居中
@@ -141,5 +141,33 @@ export default {
   width: 100%;
   padding: 0px 20px;
   box-sizing: border-box;
+}
+.el-form-item{
+  height: 100px;
+}
+.el-input__inner {
+  
+    height: 100px;
+    font-size: 13px;
+    box-shadow: none;
+    border: 1px solid #e9e9e9;
+}
+ 
+.el-input__inner:hover {
+    border-color: #e9e9e9;
+}
+ 
+.el-input__inner:focus {
+    border-color: #42a5f5;
+    box-shadow: none;
+    transition-duration: .5s;
+}
+ 
+.el-input__inner::-webkit-input-placeholder {
+    line-height: 20px;
+}
+ 
+.el-input__inner, .el-checkbox__inner, .el-textarea__inner, .el-button {
+    border-radius: 0;
 }
 </style>
