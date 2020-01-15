@@ -1,0 +1,36 @@
+@import "./normalize.css";
+
+html,body,#app{
+    height: 100%;
+    margin:0;
+    padding: 0;
+    min-width: 1366px;
+}
+.el-breadcrumb{
+    margin-bottom: 15px;
+}
+.el-row{
+    margin-bottom: 15px;
+}  
+/* 级联选择器数据过多显示缺失的bug */
+.el-cascader-panel{
+    max-height: 300px;
+}
+.el-alert{
+    margin-bottom: 15px;
+}
+.el-tag{
+    margin-right: 10px;
+}
+.input-new-tag{
+    width: 120px;
+}
+.el-step{
+    margin: 15px 0;
+}
+.el-step_tittle{
+   font-size: 13px;
+}
+.ql-editor{
+    min-height: 300px;
+}
